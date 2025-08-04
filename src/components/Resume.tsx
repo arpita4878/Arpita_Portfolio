@@ -32,7 +32,7 @@ const Resume = () => {
 
   const experience = [
     {
-      title: "MERN Stack Development Intern",
+      title: "MERN Stack Developer Intern",
       company: "Ypsilon IT Solutions",
       location: "Indore, India",
       duration: "6 Months",

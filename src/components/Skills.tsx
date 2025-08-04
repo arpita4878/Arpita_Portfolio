@@ -18,7 +18,7 @@ const skillCategories = [
       { name: 'JavaScript', level: 'Intermediate', color: 'bg-yellow-500' },
       { name: 'HTML5', level: 'Advanced', color: 'bg-orange-500' },
       { name: 'CSS3', level: 'Advanced', color: 'bg-blue-600' },
-      { name: 'Bootstrap', level: 'Intermediate', color: 'bg-purple-500' },
+      { name: 'Bootstrap', level: 'Beginner', color: 'bg-red-500' },
     ],
   },
   {
@@ -48,8 +48,8 @@ const skillCategories = [
     icon: MessageSquare,
     skills: [
       { name: 'JavaScript', level: 'Intermediate', color: 'bg-yellow-500' },
-      { name: 'TypeScript', level: 'Beginner', color: 'bg-blue-500' },
       { name: 'Java', level: 'Beginner', color: 'bg-red-600' },
+      { name: 'C/C++', level: 'Beginner', color: 'bg-blue-500' },
     ],
   },
 ];

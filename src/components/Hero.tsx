@@ -70,7 +70,7 @@ const Hero = () => {
     >
       {/* Dark Mode Toggle */}
       <button
-        className="absolute top-6 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition"
+        className="absolute top-7 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition"
         onClick={toggleDarkMode}
       >
         {isDark ? (
