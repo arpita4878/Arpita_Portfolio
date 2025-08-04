@@ -9,7 +9,8 @@ import ShippingWarImg from '/assets/img/shipping_WAR.png';
 import MealBridgeImg from '/assets/img/meal_bridge.png';
 import Portfolio from '/assets/img/PORTFOLIO.png';
 import Granth from '/assets/img/granth_01.png';
-import Granth1 from  '/assets/img/granth_01.png';
+import Granth1 from  '/assets/img/granth_img.jpg';
+import QuestionBank from  '/assets/img/img001.jpg';
 
 const projectWork = [
   {
@@ -39,16 +40,22 @@ const projectWork = [
 ];
 
 const bookProjects = [
-  {
-    title: "Granth Book",
-    description: "Educational and current affairs magazine with smooth UI and reader-friendly layout.",
-    image: Granth
-  },
-  {
-    title: "Granth Magazine",
-    description: "Educational and current affairs magazine with smooth UI and reader-friendly layout.",
-    image: Granth1
-  }
+ {
+  title: "Granth Book",
+  description: "A thoughtfully designed digital book offering curated insights on literature and culture, wrapped in a smooth and minimalist UI.",
+  image: Granth
+},
+{
+  title: "Granth Magazine",
+  description: "An interactive magazine platform focused on education and current affairs, combining elegant design with rich, accessible content.",
+  image: Granth1
+},
+{
+  title: "Question Bank",
+  description: "A comprehensive collection of categorized questions for academic and competitive exams, designed for clarity, speed, and ease of use.",
+  image: QuestionBank
+}
+
 ];
 
 const Projects = () => {
