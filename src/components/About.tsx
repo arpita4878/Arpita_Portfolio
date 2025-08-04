@@ -6,10 +6,8 @@ import {
   Lightbulb,
   Target,
   Mail,
-  Download,
   MessageCircle
 } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const cardColors = [
   "from-blue-500 to-cyan-400 dark:from-blue-700 dark:to-cyan-600",
@@ -41,49 +39,27 @@ const highlights = [
   }
 ];
 
-const container = {
-  hidden: {},
-  show: {
-    transition: { staggerChildren: 0.2 }
-  }
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
-};
-
 const About = () => {
   return (
     <section id="about" className="py-20 bg-background dark:bg-gray-900 transition-colors duration-500">
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16 transition-all duration-700 ease-out opacity-100 translate-y-0">
           <h2 className="text-4xl font-extrabold text-foreground dark:text-white mb-4 tracking-tight">
             About Me
           </h2>
           <div className="w-24 h-1 bg-primary dark:bg-purple-500 mx-auto rounded-full"></div>
-        </motion.div>
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-14 items-start">
           {/* Left - Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="space-y-5 text-muted-foreground dark:text-gray-300 text-lg leading-relaxed"
-          >
+          <div className="space-y-5 text-muted-foreground dark:text-gray-300 text-lg leading-relaxed transition-all duration-700 ease-out opacity-100 translate-x-0">
             <h3 className="text-2xl font-semibold text-foreground dark:text-white">
               MERN Stack Developer with Passion for Crafting Interfaces
             </h3>
             <p>
-             Hello! I'm a web development enthusiast with a background in Computer Science and a strong passion for the MERN stack.
-My programming journey began in college, where I found joy in building impactful digital solutions.
+              Hello! I'm a web development enthusiast with a background in Computer Science and a strong passion for the MERN stack.
+              My programming journey began in college, where I found joy in building impactful digital solutions.
             </p>
             <p>
               Through personal projects and hands-on learning, I’ve built responsive UIs, APIs, and scalable
@@ -93,18 +69,12 @@ My programming journey began in college, where I found joy in building impactful
               My interests lie in bringing design to life with clean, reusable code, while continuously
               learning and contributing to meaningful products.
             </p>
-          </motion.div>
+          </div>
 
           {/* Right - Highlights */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 gap-6"
-          >
+          <div className="grid md:grid-cols-2 gap-6 transition-opacity duration-700 ease-out opacity-100">
             {highlights.map((item, index) => (
-              <motion.div key={index} variants={fadeUp}>
+              <div key={index} className="transition-transform duration-500 hover:-translate-y-1">
                 <Card
                   className={`bg-gradient-to-tr ${cardColors[index]} rounded-xl text-white shadow-md hover:shadow-xl transition-shadow duration-300`}
                 >
@@ -116,19 +86,13 @@ My programming journey began in college, where I found joy in building impactful
                     <p className="text-sm opacity-90">{item.description}</p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mt-20"
-        >
+        <div className="text-center mt-20 transition-all duration-700 ease-out opacity-100 translate-y-0">
           <h3 className="text-2xl font-semibold text-foreground dark:text-white mb-8">
             Let’s Connect
           </h3>
@@ -142,7 +106,7 @@ My programming journey began in college, where I found joy in building impactful
               <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Get In Touch
             </Button>
-           
+
             <Button
               variant="secondary"
               className="bg-accent hover:bg-accent/90 text-accent-foreground group dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:text-white"
@@ -152,7 +116,7 @@ My programming journey began in college, where I found joy in building impactful
               Email Me
             </Button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
