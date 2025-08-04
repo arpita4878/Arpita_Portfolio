@@ -44,7 +44,7 @@ const useTypewriter = (
 };
 
 const Hero = () => {
-  const roles = ['MERN Stack Developer', 'Full Stack Engineer', 'Creative Coder'];
+  const roles = ['MERN Stack Developer', 'Full Stack Developer', 'Creative Coder'];
   const typedText = useTypewriter(roles);
   const [isDark, setIsDark] = useState(false);
 
@@ -52,7 +52,7 @@ const Hero = () => {
   const link = document.createElement('a');
   link.href = Resume; 
   link.download = 'Arpita_Seth_Resume.pdf';
-  link.target = '_blank'; // Optional: opens in new tab if supported
+  link.target = '_blank'; 
   link.click();
 };
 
@@ -70,7 +70,7 @@ const Hero = () => {
     >
       {/* Dark Mode Toggle */}
       <button
-        className="absolute top-8 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition"
+        className="absolute top-10 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition"
         onClick={toggleDarkMode}
       >
         {isDark ? (
