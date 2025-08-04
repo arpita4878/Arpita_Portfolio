@@ -8,6 +8,7 @@ export default {
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
 	],
+	
 	prefix: "",
 	theme: {
 		container: {
@@ -122,7 +123,8 @@ export default {
 				'elegant': 'var(--shadow-elegant)',
 				'card': 'var(--shadow-card)',
 				'glow': 'var(--shadow-glow)'
-			}
+			},
+			darkMode: 'class',
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
