@@ -135,34 +135,53 @@ const Projects = () => {
         </div>
 
         {/* 📚 Book Projects */}
-        <h3 className="text-2xl font-bold mb-6 text-left">📚 Book Projects</h3>
+        <h3 className="text-2xl font-bold mb-6 text-left">📚 Books</h3>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {bookProjects.map((book, index) => (
-            <Card
-              key={index}
-              className="bg-white dark:bg-gray-800 border border-border/30 shadow-sm hover:shadow-md transition duration-300 animate-fade-in-up"
-            >
-              {book.image ? (
-                <div className="h-40 overflow-hidden bg-muted">
-                  <img
-                    src={typeof book.image === 'string' ? book.image : (book.image as any).src}
-                    alt={book.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ) : (
-                <div className="h-40 flex items-center justify-center bg-muted text-gray-400 text-sm">No Image</div>
-              )}
+ {bookProjects.map((book, index) => (
+  <Card
+    key={index}
+    className="bg-white dark:bg-gray-800 border border-border/30 shadow-sm hover:shadow-md transition duration-300 animate-fade-in-up"
+    style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'both' }}
+  >
+    {/* image */}
+    {book.image ? (
+      <div className="h-40 overflow-hidden bg-muted">
+        <img
+          src={typeof book.image === 'string' ? book.image : (book.image as any).src}
+          alt={book.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+    ) : (
+      <div className="h-40 flex items-center justify-center bg-muted text-gray-400 text-sm">No Image</div>
+    )}
 
-              <CardHeader className="pb-2">
-                <CardTitle className="text-lg font-semibold">{book.title}</CardTitle>
-              </CardHeader>
+    <CardHeader className="pb-2">
+      <CardTitle className="text-lg font-semibold">{book.title}</CardTitle>
+    </CardHeader>
 
-              <CardContent>
-                <p className="text-muted-foreground text-sm">{book.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+    <CardContent>
+      <p className="text-muted-foreground text-sm">{book.description}</p>
+    </CardContent>
+  </Card>
+))}
+<style jsx>{`
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+`}</style>
+
         </div>
       </div>
     </section>
