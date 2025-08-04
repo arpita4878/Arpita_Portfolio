@@ -86,7 +86,7 @@ const Hero = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
             Hi, I'm{' '}
             <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Arpita 
+              Arpita Seth
             </span>
           </h1>
 
