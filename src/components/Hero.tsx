@@ -117,7 +117,7 @@ const Hero = () => {
               }
             >
               <Mail className="w-4 h-4 mr-2" />
-              View Portfolio
+              View projects
             </Button>
           </div>
 
