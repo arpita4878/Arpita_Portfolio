@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Home, User, FileText, Code, Briefcase, Mail } from 'lucide-react';
+import { Menu, X, Home, User, FileText, Code, Briefcase, Certificate } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ const Navigation = () => {
     { href: '#resume', label: 'Resume', icon: FileText },
     { href: '#skills', label: 'Skills', icon: Code },
     { href: '#projects', label: 'Projects', icon: Briefcase },
-    { href: '#contact', label: 'Contact', icon: Mail },
+    { href: '#Certificate', label: 'Certificate', icon: Certificate },
   ];
 
   const scrollToSection = (sectionId: string) => {
