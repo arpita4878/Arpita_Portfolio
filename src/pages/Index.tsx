@@ -4,8 +4,8 @@ import About from '@/components/About';
 import Resume from '@/components/Resume';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
-import Footer from '@/components/Certificate';
 import Certificate from '@/components/Certificate';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
