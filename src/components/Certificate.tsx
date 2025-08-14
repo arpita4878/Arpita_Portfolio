@@ -29,14 +29,7 @@ const certificates = [
       'In-depth understanding of HTML and CSS',
     image: '/certificates/udemy.png',
   },
-  {
-    title: 'Learn HTML and CSS from Beginning to Advanced',
-    organization: 'Udemy',
-    date: 'January 2025',
-    description:
-      'In-depth understanding of HTML and CSS',
-    image: '/certificates/udemy.png',
-  },
+  
 ];
 
 const Certificate = () => {

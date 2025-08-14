@@ -57,28 +57,15 @@ const Hero = () => {
 };
 
 
-  const toggleDarkMode = () => {
-    const root = document.documentElement;
-    root.classList.toggle('dark');
-    setIsDark(!isDark);
-  };
+ 
 
   return (
     <section
       id="home"
       className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 text-black dark:text-white relative px-6 transition-colors duration-300"
     >
-      {/* Dark Mode Toggle */}
-      <button
-        className="absolute top-11 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition"
-        onClick={toggleDarkMode}
-      >
-        {isDark ? (
-          <Sun className="w-5 h-5 text-yellow-400" />
-        ) : (
-          <Moon className="w-5 h-5 text-gray-800" />
-        )}
-      </button>
+  
+    
 
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 py-20">
         {/* Text Content */}
