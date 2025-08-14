@@ -4,8 +4,8 @@ import About from '@/components/About';
 import Resume from '@/components/Resume';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import Footer from '@/components/Certificate';
+import Certificate from '@/components/Certificate';
 
 const Index = () => {
   return (
@@ -15,8 +15,8 @@ const Index = () => {
       <About />
       <Resume />
       <Skills />
+      <Certificate/>
       <Projects />
-      <Contact />
       <Footer />
     </div>
   );
